@@ -20,6 +20,10 @@ curl -sO https://packages.wazuh.com/4.8/wazuh-install.sh
 ```
 bash wazuh-install.sh -a
 ```
+Or add -o to overwrite
+```
+bash wazuh-install.sh -a -o
+```
 ## Ubuntu start:
 ```
 sudo systemctl status wazuh-dashboard
