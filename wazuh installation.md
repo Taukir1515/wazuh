@@ -38,7 +38,7 @@ sudo systemctl status wazuh-indexer
 sudo systemctl restart wazuh-indexer
 ```
 
-## Host Windows 10 agent
+## Windows 10 agent
 
 ```
 Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.8.2-1.msi -OutFile ${env:tmp}\wazuh-agent.msi; msiexec.exe /i ${env:tmp}\wazuh-agent.msi /q WAZUH_MANAGER='192.168.0.106' WAZUH_AGENT_GROUP='default' WAZUH_AGENT_NAME='host-win10'
